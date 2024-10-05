@@ -1,15 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom'; 
-import ExoplanetsVideo from '../../assets/Exoplanets.mp4'; 
+import ExoplanetsVideo from '../assets/Exoplanets.mp4'; 
 
 const planets = [
-  {
-    id: 1,
-    name: 'K2-33b',
-    image: 'https://images-assets.nasa.gov/image/PIA20690/PIA20690~large.jpg?w=1920&h=1080&fit=clip&crop=faces%2Cfocalpoint',
-    description: 'is one of the youngest exoplanets detected to date using NASA Kepler Space Telescope',
-    details: 'Explore K2-33b',
-  },
   {
     id: 2,
     name: 'Venus',
@@ -66,27 +59,43 @@ const Home = () => {
         muted 
       />
 
-      <div className="relative z-10 w-full h-auto min-h-screen bg-black bg-opacity-50 flex flex-col items-center justify-start pt-10 pb-20">
+      <div className="relative z-10 w-full h-auto min-h-screen bg-black bg-opacity-50 flex flex-col items-center justify-start ">
         
         <div className="text-center text-white">
           <h1 className="text-6xl flex items-center justify-center h-screen font-bold ">Universe Unveiled</h1>
         </div>
       </div>
 
-      <div className="scroll-container min-h-6 mt-50 flex overflow-x-auto space-x-4 py-4 snap-x snap-mandatory">
+{/* Planets which are not considered as Exoplanets */}
+<div className="h-screen flex flex-col items-center">
+      <div className="flex justify-center items-center   w-full h-1/4">
+            <h1 className="text-white font-bold text-5xl">Planets which are not considered as Exoplanets</h1>
+      </div>
+      <div className="h-full w-full ">
+      <div className=" min-h-6 mt-50 flex overflow-x-auto space-x-4 py-4 snap-x snap-mandatory text-white">
           {planets.map((planet) => (
             <Link 
               key={planet.id} 
-              to={`/planet/${planet.id}`} 
-              className="card transition-transform duration-300 transform hover:scale-110 bg-gray-600 rounded-lg shadow-lg p-3 flex flex-col items-center w-64 snap-start"
+              to={`/planet/${planet.name}`} 
+              className="card transition-transform duration-300 transform hover:scale-105 bg-black rounded-3xl shadow-lg p-3 flex flex-col items-center w-64 snap-start border "
             >
+            
               <img src={planet.image} alt={planet.name} className="w-full h-40 object-cover rounded-t-lg" />
-              <h2 className="text-lg font-semibold mt-2 text-black">{planet.name}</h2>
-              <p className="text-sm text-black">{planet.description}</p>
-              <p className="text-xl bold text-black mt-2">{planet.details}</p>
+              <h2 className="text-lg font-semibold mt-2  ">{planet.name}</h2>
+              <p className="text-sm  ">{planet.description}</p>
+              <p className="text-xl bold   mt-2">{planet.details}</p>
             </Link>
           ))}
-        </div>
+      </div>
+      <div className="flex justify-center items-center   w-full h-1/4">
+      <h1 className="text-white font-bold text-5xl">And many more .......</h1>
+
+      </div>
+
+      </div>
+      
+</div>
+     
 
       <div className="w-full bg-gray-500 py-12 px-6 text-center">
     
