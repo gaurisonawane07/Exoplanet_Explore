@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes scroll {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .scroll-container {
+    display: flex;
+    overflow: hidden;
+    width: 100%; /* Full width of the container */
+    animation: scroll 15s linear infinite; /* Adjust the duration for speed */
+  }
+  
+  .card {
+    min-width: 200px; 
+    margin: 0 10px; 
+  }
+  
