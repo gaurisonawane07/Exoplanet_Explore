@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom'; 
 import ExoplanetsVideo from '../assets/Exoplanets.mp4'; 
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 const planets = [
   {
@@ -82,6 +84,8 @@ const Home = () => {
         loop 
         muted 
       />
+    <Navbar/>
+
 
       <div className="relative z-10 w-full h-auto min-h-screen bg-black bg-opacity-70 flex flex-col items-center justify-start ">
         
@@ -94,7 +98,7 @@ const Home = () => {
 
 
       <div className="relative h-screen flex flex-col items-center bg-black bg-opacity-70 text-white">
-          <div className="flex justify-center items-center text-white text-5xl font-bold my-10 bg-gradient-to-r from-red-500 to-yellow-500 bg-clip-text text-transparent">
+          <div className="flex justify-center items-cente text-5xl font-bold my-10 bg-gradient-to-r from-red-500 to-yellow-500 bg-clip-text text-transparent">
             <h1>What Are Exoplanets?</h1>
           </div>
           <div className="  min-h-full flex flex-col">
@@ -135,7 +139,7 @@ const Home = () => {
 {/* Planets which are not considered as Exoplanets */}
       <div className="relative bg-black bg-opacity-70 h-screen flex flex-col items-center">
             <div className="flex justify-center items-center   w-full h-1/4">
-                  <h1 className="text-white font-bold text-5xl bg-gradient-to-r from-red-500 to-yellow-500 bg-clip-text text-transparent">Some Planets which are not considered as Exoplanets</h1>
+                  <h1 className="font-bold text-5xl bg-gradient-to-r from-red-500 to-yellow-500 bg-clip-text text-transparent">Some Planets which are not considered as Exoplanets</h1>
             </div>
             <div className="h-full w-full ">
             <div className=" min-h-6 mt-50 flex justify-center items-center overflow-x-auto space-x-4 py-4 snap-x snap-mandatory text-white">
@@ -205,17 +209,17 @@ const Home = () => {
     </section>
 
 
-      <div className="bg-slate-900 h-screen w-full flex justify-around items-center">
+      {/* <div className="relative bg-slate-900 h-screen w-full flex justify-around items-center">
         <div className="bg-red-300 w-1/3 h-3/4 rounded-2xl">
           <div className="w-full h-3/5 bg-blue-500 rounded-2xl"></div>
           <div className="w-full bg-red-500 rounded-2xl"></div>
         </div>
         <div className="bg-red-300 w-1/3 h-3/4 rounded-2xl"></div>
-      </div>
+      </div> */}
 
 
 
-      <div className="w-full bg-gray-500 py-12 px-6 text-center">
+      {/* <div className=" relative w-full bg-gray-500 py-12 px-6 text-center">
     
         <div className="w-full mb-10">
           <h2 className="text-4xl font-bold text-gray-900">Explore More</h2>
@@ -273,7 +277,9 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
+
+      <Footer/>
     </div>
   );
 };
