@@ -46,13 +46,6 @@ function Planetscards( ) {
           description: 'Saturn is the sixth planet from the Sun, the second-largest planet in our solar system.',
           details: 'Explore Saturn',
         },
-        {
-          id: 7,
-          name: 'Uranus',
-          image: 'https://science.nasa.gov/wp-content/uploads/2024/03/uranus-pia18182-16x9-1.jpg?w=1536&format=webp',
-          description: 'The seventh planet from the Sun, Uranus has the third largest diameter of planets in our solar system.',
-          details: 'Explore Uranus',
-        },
         
       ];
       
