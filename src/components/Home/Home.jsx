@@ -5,10 +5,10 @@ import ExoplanetsVideo from '../../assets/Exoplanets.mp4';
 const planets = [
   {
     id: 1,
-    name: 'Mercury',
-    image: 'https://images.pexels.com/photos/20376399/pexels-photo-20376399/free-photo-of-planet-of-solar-system.jpeg?auto=compress&cs=tinysrgb&w=600',
-    description: 'Mercury is the smallest planet in our solar system, and the nearest to the Sun.',
-    details: 'Explore Mercury',
+    name: 'K2-33b',
+    image: 'https://images-assets.nasa.gov/image/PIA20690/PIA20690~large.jpg?w=1920&h=1080&fit=clip&crop=faces%2Cfocalpoint',
+    description: 'is one of the youngest exoplanets detected to date using NASA Kepler Space Telescope',
+    details: 'Explore K2-33b',
   },
   {
     id: 2,
@@ -69,8 +69,7 @@ const Home = () => {
       <div className="relative z-10 w-full h-auto min-h-screen bg-black bg-opacity-50 flex flex-col items-center justify-start pt-10 pb-20">
         
         <div className="text-center text-white">
-          <h1 className="text-6xl grid place-content-center font-bold px-2 py-2">Universe Unveiled</h1>
-          <p className="text-lg mb-6">Unveil the Mysteries of Distant Worlds</p>
+          <h1 className="text-6xl flex items-center justify-center h-screen font-bold ">Universe Unveiled</h1>
         </div>
       </div>
 
@@ -97,7 +96,7 @@ const Home = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-8 px-4">
             <div className="bg-white p-6 rounded-lg shadow-lg">
               <h3 className="text-2xl font-semibold text-gray-800">Planetary Facts</h3>
-              <p className="mt-4 text-black-600">Delve into detailed facts about each planet’s atmosphere, surface, and potential for life.</p>
+              <p className="mt-4 text-black-600">Delve into detailed facts about each planet's atmosphere, surface, and potential for life.</p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-lg">
               <h3 className="text-2xl font-semibold text-gray-800">Space Missions</h3>
@@ -128,7 +127,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-
+        
         <div className="w-full">
           <h2 className="text-4xl font-bold text-gray-900">Get Involved</h2>
           <p className="text-lg text-gray-700 mt-4">Join the journey of space exploration. Participate in citizen science projects and contribute to research.</p>

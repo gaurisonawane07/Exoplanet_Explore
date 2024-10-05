@@ -14,8 +14,8 @@
   .scroll-container {
     display: flex;
     overflow: hidden;
-    width: 100%; /* Full width of the container */
-    animation: scroll 15s linear infinite; /* Adjust the duration for speed */
+    width: 100%;
+    animation: scroll 15s linear infinite; 
   }
   
   .card {
