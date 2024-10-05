@@ -32,6 +32,7 @@ const planets = [
     name: 'Jupiter',
     image: 'https://science.nasa.gov/wp-content/uploads/2024/03/jupiter-marble-pia22946-16x9-1.jpg?w=1536&format=webp',
     description: 'Jupiter is the largest planet in our solar system if it were a hollow shell, 1,000 Earths could fit inside.',
+    content:"Jupiter is a world of extremes. It's the largest planet in our solar system – if it were a hollow shell, 1,000 Earths could fit inside. It's also the oldest planet, forming from the dust and gases left over from the Sun's formation 4.6 billion years ago. But it has the shortest day in the solar system, taking only 10.5 hours to spin around once on its axis.",
     details: 'Explore Jupiter',
   },
   {
@@ -84,7 +85,6 @@ const Home = () => {
         loop 
         muted 
       />
-    <Navbar/>
 
 
       <div className="relative z-10 w-full h-auto min-h-screen bg-black bg-opacity-70 flex flex-col items-center justify-start ">
@@ -219,7 +219,6 @@ const Home = () => {
 
 
 
-      {/* <div className=" relative w-full bg-gray-500 py-12 px-6 text-center">
     
         <div className="w-full mb-10">
           <h2 className="text-4xl font-bold text-gray-900">Explore More</h2>
