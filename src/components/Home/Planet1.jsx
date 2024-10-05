@@ -2,7 +2,7 @@ import React from 'react';
 
 function Planet1() {
   return (
-    <div className="flex items-center justify-center h-7 bg-black p-9">
+    <div className="flex items-center justify-center h-full bg-black p-9">
       
       <img
         src="https://images-assets.nasa.gov/image/PIA20690/PIA20690~large.jpg?w=1920&h=1080&fit=clip&crop=faces%2Cfocalpoint"
