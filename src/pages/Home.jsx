@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom'; 
 import ExoplanetsVideo from '../assets/Exoplanets.mp4'; 
 
+
 const planets = [
   {
     id: 2,
@@ -50,7 +51,7 @@ const planets = [
 
 const Home = () => {
   return (
-    <div className="relative w-full h-auto min-h-screen bg-black overflow-hidden">
+    <div className="relative w-full h-auto min-h-screen bg-src() overflow-hidden">
       <video 
         className="absolute top-0 left-0 w-full h-screen object-cover" 
         src={ExoplanetsVideo} 
@@ -59,7 +60,8 @@ const Home = () => {
         muted 
       />
 
-      <div className="relative z-10 w-full h-auto min-h-screen bg-black bg-opacity-50 flex flex-col items-center justify-start ">
+      <div className="relative z-10 w-full h-auto min-h-screen bg-transparent  bg-opacity-50 flex flex-col items-center justify-start ">
+        
         
         <div className="text-center text-white">
           <h1 className="text-6xl flex items-center justify-center h-screen font-bold ">Universe Unveiled</h1>
