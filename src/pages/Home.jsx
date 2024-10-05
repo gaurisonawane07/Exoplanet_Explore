@@ -140,7 +140,7 @@ const Home = () => {
             <div className="flex justify-center items-center   w-full h-1/4">
                   <h1 className="text-white font-bold text-5xl bg-gradient-to-r from-red-500 to-yellow-500 bg-clip-text text-transparent">Some Planets which are not considered as Exoplanets</h1>
             </div>
-            <div className="h-full w-full ">
+            <div className=" h-full w-full ">
             <div className=" min-h-6 mt-50 flex justify-center items-center overflow-x-auto space-x-4 py-4 snap-x snap-mandatory text-white">
                 {planets.map((planet) => (
                   <Link 
