@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom'; 
-import SolarSystemVideo from '../../assets/SolarSystem.mp4'; 
+import ExoplanetsVideo from '../../assets/Exoplanets.mp4'; 
 
 const planets = [
   {
@@ -57,10 +57,10 @@ const planets = [
 
 const Home = () => {
   return (
-    <div className="relative w-full h-auto min-h-screen overflow-hidden">
+    <div className="relative w-full h-auto min-h-screen bg-black overflow-hidden">
       <video 
         className="absolute top-0 left-0 w-full h-screen object-cover" 
-        src={SolarSystemVideo} 
+        src={ExoplanetsVideo} 
         autoPlay 
         loop 
         muted 
@@ -69,12 +69,12 @@ const Home = () => {
       <div className="relative z-10 w-full h-auto min-h-screen bg-black bg-opacity-50 flex flex-col items-center justify-start pt-10 pb-20">
         
         <div className="text-center text-white">
-          <h1 className="text-6xl font-bold px-2 py-2">Universe Unveiled</h1>
+          <h1 className="text-6xl grid place-content-center font-bold px-2 py-2">Universe Unveiled</h1>
           <p className="text-lg mb-6">Unveil the Mysteries of Distant Worlds</p>
         </div>
+      </div>
 
-        
-        <div className="scroll-container mt-10 flex overflow-x-auto space-x-4 py-4 snap-x snap-mandatory">
+      <div className="scroll-container min-h-6 mt-50 flex overflow-x-auto space-x-4 py-4 snap-x snap-mandatory">
           {planets.map((planet) => (
             <Link 
               key={planet.id} 
@@ -88,7 +88,6 @@ const Home = () => {
             </Link>
           ))}
         </div>
-      </div>
 
       <div className="w-full bg-gray-500 py-12 px-6 text-center">
     
