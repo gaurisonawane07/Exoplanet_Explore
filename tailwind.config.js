@@ -15,6 +15,9 @@ export default {
       animation: {
         'rotate-once': 'rotateOnce 2s ease-in-out', // Define the animation (2 seconds, ease in-out)
       },
+      animation1: {
+        'fade-in-up': 'fadeInUp 0.5s ease-in-out forwards', // Fade-in animation lasting 0.5 seconds
+      },
     },
   },
   plugins: [],
