@@ -24,6 +24,11 @@ function Navbar() {
                     </Link>
                 </li>
                 <li>
+                    <Link to="/Games">
+                        Games
+                    </Link>
+                </li>
+                <li>
                     <Link to="/about">
                         About
                     </Link>
