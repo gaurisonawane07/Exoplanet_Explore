@@ -1,5 +1,7 @@
-import React from 'react'
+import React,  { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
+import AOS from 'aos';  // Import AOS library
+import 'aos/dist/aos.css';  // Import AOS styles
 
 function Planetscards( ) {
 
@@ -49,6 +51,11 @@ function Planetscards( ) {
       ];
       
 
+      useEffect(() => {
+        AOS.init({ duration: 1200 });  // Initialize AOS and set animation duration
+      }, []);
+
+
 const { planetName } = useParams();
 const planet = planets.find((p) => p.name === planetName);
 
@@ -56,7 +63,7 @@ const planet = planets.find((p) => p.name === planetName);
   return (
     <div className="bg-black h-screen flex justify-center items-center">
         {/* <div className="bg-slate-200 shadow-lg rounded-lg p-6 h-screen "> */}
-        <div className="w-1/2  ">
+        <div className="w-1/2  " data-aos="fade-up">
             <img
                 src={planet.image}
                 alt={`${planet.name} image`}
@@ -64,7 +71,7 @@ const planet = planets.find((p) => p.name === planetName);
             />
         </div>
        
-        <div className='w-1/2   h-full flex justify-center items-center flex-col'>
+        <div className='w-1/2   h-full flex justify-center items-center flex-col'data-aos="fade-up" >
             <h2 className="text-5xl font-bold mb-2 text-white">{planet.name}</h2>
             <p className="  text-gray-400 text-xl mb-2 px-10"><strong>Description:</strong> {planet.content} </p>
         </div>

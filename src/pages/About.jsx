@@ -1,7 +1,14 @@
-import React from 'react';
+import React,  { useEffect } from 'react';
 import Navbar from '../components/Navbar';
+import AOS from 'aos';  // Import AOS library
+import 'aos/dist/aos.css';  // Import AOS styles
 
 const About = () => {
+
+  useEffect(() => {
+    AOS.init({ duration: 1200 });  // Initialize AOS and set animation duration
+  }, []);
+
   return (
     <>
     <div
@@ -9,7 +16,7 @@ const About = () => {
       style={{ backgroundImage: "url('https://science.nasa.gov/wp-content/uploads/2023/07/hubble-ugc12295-potw2330a.jpg?w=1536&format=webp')" }} 
     >
         <Navbar/>
-        <div className="h-screen  flex justify-center items-center ">
+        <div className="h-screen  flex justify-center items-center " data-aos="fade-up">
             <div className="bg-black bg-opacity-80 shadow-lg rounded-lg p-6 max-w-2xl text-center">
                 <h1 className="text-4xl font-bold bg-gradient-to-r from-red-500 to-yellow-500 bg-clip-text text-transparent mb-4">
                 About Us
@@ -19,13 +26,16 @@ const About = () => {
                 Explore, learn, and discover new frontiers.
                 </p>
 
-                <p className="text-lg text-gray-300 mb-6">
+                <p 
+                data aos="fade-up"
+                data-aos-delay="500"
+                className="text-lg text-gray-300 mb-6">
                 For more information on space exploration, research, and missions,
                 feel free to visit the official NASA website by clicking the link below.
                 </p>
 
                 <a
-                href="https://www.nasa.gov"
+                href="https://eyes.nasa.gov/apps/exo/#/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white bg-blue-600 hover:bg-blue-700 font-semibold py-2 px-4 rounded-lg transition-colors duration-300"
