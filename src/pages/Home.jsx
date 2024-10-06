@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom'; 
 import ExoplanetsVideo from '../assets/Exoplanets.mp4'; 
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 const planets = [
   {
@@ -83,8 +85,9 @@ const Home = () => {
         loop 
         muted 
       />
-      <nav className='bg-gray-800 p-6'>
-      </nav>
+
+      <Navbar/>
+
 
       <div className="relative z-10 w-full h-auto min-h-screen bg-black bg-opacity-70 flex flex-col items-center justify-start ">
         
@@ -97,7 +100,7 @@ const Home = () => {
 
 
       <div className="relative h-screen flex flex-col items-center bg-black bg-opacity-70 text-white">
-          <div className="flex justify-center items-center text-white text-5xl font-bold my-10 bg-gradient-to-r from-red-500 to-yellow-500 bg-clip-text text-transparent">
+          <div className="flex justify-center items-cente text-5xl font-bold my-10 bg-gradient-to-r from-red-500 to-yellow-500 bg-clip-text text-transparent">
             <h1>What Are Exoplanets?</h1>
           </div>
           <div className="  min-h-full flex flex-col">
@@ -138,7 +141,7 @@ const Home = () => {
 {/* Planets which are not considered as Exoplanets */}
       <div className="relative bg-black bg-opacity-70 h-screen flex flex-col items-center">
             <div className="flex justify-center items-center   w-full h-1/4">
-                  <h1 className="text-white font-bold text-5xl bg-gradient-to-r from-red-500 to-yellow-500 bg-clip-text text-transparent">Some Planets which are not considered as Exoplanets</h1>
+                  <h1 className="font-bold text-5xl bg-gradient-to-r from-red-500 to-yellow-500 bg-clip-text text-transparent">Some Planets which are not considered as Exoplanets</h1>
             </div>
             <div className=" h-full w-full ">
             <div className=" min-h-6 mt-50 flex justify-center items-center overflow-x-auto space-x-4 py-4 snap-x snap-mandatory text-white">
@@ -208,18 +211,18 @@ const Home = () => {
     </section>
 
 
-      <div className="bg-slate-900 h-screen w-full flex justify-around items-center">
+      {/* <div className="relative bg-slate-900 h-screen w-full flex justify-around items-center">
         <div className="bg-red-300 w-1/3 h-3/4 rounded-2xl">
           <div className="w-full h-3/5 bg-blue-500 rounded-2xl"></div>
           <div className="w-full bg-red-500 rounded-2xl"></div>
         </div>
         <div className="bg-red-300 w-1/3 h-3/4 rounded-2xl"></div>
-      </div>
+      </div> */}
 
 
-      <div className="w-full bg-gray-500 py-12 px-6 text-center">
+
     
-        <div className="w-full mb-10">
+        {/* <div className="w-full mb-10">
           <h2 className="text-4xl font-bold text-gray-900">Explore More</h2>
           <p className="text-lg text-black-700 mt-4">Learn fascinating facts and details about our solar system.</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-8 px-4">
@@ -236,9 +239,9 @@ const Home = () => {
               <p className="mt-4 text-black-600">Access resources and tools to learn more about astronomy and planetary science.</p>
             </div>
           </div>
-        </div>
+        </div> */}
 
-        <div className="w-full mb-10">
+        {/* <div className="w-full mb-10">
           <h2 className="text-4xl font-bold text-gray-900">Latest Discoveries</h2>
           <p className="text-lg text-gray-700 mt-4">Stay updated with the newest findings from space research and exploration.</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-8 px-4">
@@ -255,9 +258,9 @@ const Home = () => {
               <p className="mt-4 text-gray-600">Recent missions have found new mineral deposits on the lunar surface.</p>
             </div>
           </div>
-        </div>
+        </div> */}
         
-        <div className="w-full">
+        {/* <div className="w-full">
           <h2 className="text-4xl font-bold text-gray-900">Get Involved</h2>
           <p className="text-lg text-gray-700 mt-4">Join the journey of space exploration. Participate in citizen science projects and contribute to research.</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-8 px-4">
@@ -274,8 +277,10 @@ const Home = () => {
               <p className="mt-4 text-gray-600">Attend workshops and seminars to learn more about space science.</p>
             </div>
           </div>
-        </div>
-      </div>
+        </div> */}
+
+
+      <Footer/>
     </div>
   );
 };
