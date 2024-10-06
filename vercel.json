@@ -1,6 +1,9 @@
 {
     "routes": [
-      { "src": "/(.*)", "destination": "/" }
+    { 
+        "source": "/(.*)", 
+      "destination": "/index.html"
+    }
     ]
   }
   
